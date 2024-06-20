@@ -2,6 +2,7 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Source: https://www.github.com/toradex/aktualizr
 Upstream-Name: aktualizr
 Upstream-Contact: https://www.github.com/toradex/aktualizr/issues/new
+Comment: repacked to include git submodules in third_party/ directory.
 
 Files: *
 Copyright: 2024 Toradex AG
