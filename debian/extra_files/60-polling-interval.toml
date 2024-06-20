@@ -1,2 +1,2 @@
 [uptane]
-polling_sec = 60
+polling_sec = 300
