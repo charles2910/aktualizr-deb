@@ -34,5 +34,10 @@ Depends:
  unzip,
  ${shlibs:Depends},
  ${misc:Depends},
-Description: Toradex's fork of aktualizr
+Description: C++ implementation of Uptane OTA update client
+ It is intended to be installed on devices that wish to receive OTA updates
+ from an Uptane-compatible OTA server.
+ .
+ Toradex's fork of aktualizr.
+ .
  Contains both the application and shared library.
