@@ -6,6 +6,7 @@ debian/extra_files/60-polling-interval.toml etc/sota/conf.d/
 debian/extra_files/70-disable-ostree.toml   etc/sota/conf.d/
 debian/extra_files/gateway.url              etc/sota/
 debian/extra_files/root.crt                 etc/sota/
+debian/extra_files/secondaries.json         etc/sota/
 usr/bin/aktualizr-info
 usr/bin/aktualizr-torizon
 usr/lib/*/libaktualizr.so
