@@ -8,4 +8,18 @@ To make it happen, download the tarball, unpack it, git clone both libraries to
 third_party/ dir and checkout to the correct commit. Then repack and gbp
 import-orig it.
 
- -- Carlos Henrique Lima Melara <carlos.melara@toradex.com>  Fri, 12 Jan 2024 12:34:30 -0300
+Alternatively, one can:
+
+git clone --recurse-submodules https://github.com/toradex/aktualizr.git
+git checkout <desired_hash>
+uversion=$(git show --date=format:%Y%m%d --pretty=1.0+git%cd.%h)
+cd ..
+mv aktualizr aktualizr-torizon-${uversion}+ds
+tar cfz aktualizr-torizon-${uversion}+ds.tar.gz \
+         --exclude=.git                         \
+         --exclude=.gitignore                   \
+         --exclude=.gitattributes               \
+         --exclude=.gitmodules                  \
+         aktualizr-torizon-${uversion}+ds
+
+ -- Carlos Henrique Lima Melara <carlos.melara@toradex.com>  Fri, 21 Jun 2024 10:44:30 -0300
