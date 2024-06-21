@@ -3,4 +3,4 @@ opts="mode=git, \
       pgpmode=none, \
       pretty=1.0+git%cd.%h" \
   https://github.com/toradex/aktualizr.git \
-  heads/toradex-master debian debian/repack
+  heads/toradex-master
