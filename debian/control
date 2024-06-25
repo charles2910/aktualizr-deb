@@ -36,6 +36,7 @@ Depends:
  unzip,
  ${shlibs:Depends},
  ${misc:Depends},
+Recommends: lshw
 Description: C++ implementation of Uptane OTA update client
  It is intended to be installed on devices that wish to receive OTA updates
  from an Uptane-compatible OTA server.
