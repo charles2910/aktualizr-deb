@@ -23,7 +23,7 @@ Build-Depends:
  libssl-dev,
  python3,
  sqlite3
-Standards-Version: 4.6.2
+Standards-Version: 4.7.0
 Homepage: https://www.github.com/toradex/aktualizr
 Vcs-Browser: https://www.github.com/torizon/aktualizr-deb
 Vcs-Git: https://www.github.com/torizon/aktualizr-deb.git
