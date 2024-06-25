@@ -25,8 +25,8 @@ Build-Depends:
  sqlite3
 Standards-Version: 4.6.2
 Homepage: https://www.github.com/toradex/aktualizr
-Vcs-Browser: https://www.github.com/torizon/aktualizr-pkg
-Vcs-Git: https://www.github.com/torizon/aktualizr-pkg.git
+Vcs-Browser: https://www.github.com/torizon/aktualizr-deb
+Vcs-Git: https://www.github.com/torizon/aktualizr-deb.git
 
 Package: aktualizr-torizon
 Architecture: any
