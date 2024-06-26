@@ -15,7 +15,7 @@ jobs:
     uses: torizon/torizon-deb-ci/.github/workflows/toradex-deb-ci.yml@v0
     with:
       arch: ${{ matrix.arch }}
-      docker-image: ubuntu:focal
+      docker-image: ubuntu:jammy
       package-name: aktualizr-torizon
       run-attestation: true
       run-piuparts: false
