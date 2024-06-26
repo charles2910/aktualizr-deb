@@ -1,2 +1,2 @@
 [provision]
-primary_ecu_hardware_id = "ubuntu-22-04"
+primary_ecu_hardware_id = "ubuntu-24-04"
