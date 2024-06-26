@@ -1,9 +1,12 @@
-aktualizr-torizon (1.0+git20240529.d4ddfbe5+ds-0+toradex1~20.04.1) focal; urgency=medium
+aktualizr-torizon (1.0+git20240529.d4ddfbe5+ds-0+toradex1~deb11u1) bullseye; urgency=medium
 
   [ Carlos Henrique Lima Melara ]
   * New upstream version 1.0+git20240529.d4ddfbe5+ds.
   * Use /etc for installing configuration files as FHS 3.0 mandates.
-  * .github/workflows/deb-builder.yml: add reusable workflow.
+  * .github/workflows/deb-builder.yml:
+      - add reusable workflow.
+      - build using debian:bullseye image.
+      - enable armhf build.
   * debian/README.source: add alternative way to get orig source.
   * debian/aktualizr-torizon.install:
       - install config file to disable ostree.
@@ -13,9 +16,8 @@ aktualizr-torizon (1.0+git20240529.d4ddfbe5+ds-0+toradex1~20.04.1) focal; urgenc
   * debian/control:
       - add Recommends on lshw.
       - add Uploaders field.
-      - add runtime dependencies for cloud's provision-device script.
-      - depends on debhelper-compat 12 because 13 isn't available.
-      - drop build dependency on libostree.
+      - bump Standards-Version to 4.7.0 - no changes needed.
+      - bump debhelper-compat to 13.
       - improve short and long description.
       - remove duplicate cmake on Build-Depends field.
       - s/aktualizr-pkg/aktualizr-deb/ in Vcs-* fields
@@ -24,6 +26,7 @@ aktualizr-torizon (1.0+git20240529.d4ddfbe5+ds-0+toradex1~20.04.1) focal; urgenc
       - add Comment field explaining the repack.
       - update copyright information.
   * debian/extra_files/:
+      - 40-hardware-id.toml: change hardware ID to debian-11.
       - 50-secondaries.toml: enable secondaries.
       - 60-polling-interval.toml: set the same interval as torizon.
       - 70-disable-ostree.toml: rename from 80-*.
@@ -31,7 +34,9 @@ aktualizr-torizon (1.0+git20240529.d4ddfbe5+ds-0+toradex1~20.04.1) focal; urgenc
       - 80-offline-updates.toml: add config file (off by default).
       - bl_actions.sh: remove bootloader secondaries script.
       - secondaries.json: remove bootloader secondary.
-  * debian/gbp.conf: add default parameters to git-buildpackage.
+  * debian/gbp.conf:
+      - add default parameters to git-buildpackage.
+      - change packaging branch to toradex/bullseye.
   * debian/rules:
       - disable tests during build.
       - enable offline updates.
