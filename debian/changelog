@@ -1,11 +1,11 @@
-aktualizr-torizon (1.0+git20240529.d4ddfbe5+ds-0+toradex1~deb11u1) bullseye; urgency=medium
+aktualizr-torizon (1.0+git20240529.d4ddfbe5+ds-0+toradex1~deb12u1) bookworm; urgency=medium
 
   [ Carlos Henrique Lima Melara ]
   * New upstream version 1.0+git20240529.d4ddfbe5+ds.
   * Use /etc for installing configuration files as FHS 3.0 mandates.
   * .github/workflows/deb-builder.yml:
       - add reusable workflow.
-      - build using debian:bullseye image.
+      - build using debian:bookworm image.
       - enable armhf build.
   * debian/README.source: add alternative way to get orig source.
   * debian/aktualizr-torizon.install:
@@ -26,7 +26,7 @@ aktualizr-torizon (1.0+git20240529.d4ddfbe5+ds-0+toradex1~deb11u1) bullseye; urg
       - add Comment field explaining the repack.
       - update copyright information.
   * debian/extra_files/:
-      - 40-hardware-id.toml: change hardware ID to debian-11.
+      - 40-hardware-id.toml: change hardware ID to debian-12.
       - 50-secondaries.toml: enable secondaries.
       - 60-polling-interval.toml: set the same interval as torizon.
       - 70-disable-ostree.toml: rename from 80-*.
@@ -36,7 +36,7 @@ aktualizr-torizon (1.0+git20240529.d4ddfbe5+ds-0+toradex1~deb11u1) bullseye; urg
       - secondaries.json: remove bootloader secondary.
   * debian/gbp.conf:
       - add default parameters to git-buildpackage.
-      - change packaging branch to toradex/bullseye.
+      - change packaging branch to toradex/bookworm.
   * debian/rules:
       - disable tests during build.
       - enable offline updates.
