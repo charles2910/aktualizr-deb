@@ -1,11 +1,11 @@
-aktualizr-torizon (1.0+git20240529.d4ddfbe5+ds-0+toradex1~deb12u1) bookworm; urgency=medium
+aktualizr-torizon (1.0+git20240529.d4ddfbe5+ds-0+toradex1) unstable; urgency=medium
 
   [ Carlos Henrique Lima Melara ]
   * New upstream version 1.0+git20240529.d4ddfbe5+ds.
   * Use /etc for installing configuration files as FHS 3.0 mandates.
   * .github/workflows/deb-builder.yml:
       - add reusable workflow.
-      - build using debian:bookworm image.
+      - build using debian:unstable image.
       - enable armhf build.
   * debian/README.source: add alternative way to get orig source.
   * debian/aktualizr-torizon.install:
@@ -26,7 +26,7 @@ aktualizr-torizon (1.0+git20240529.d4ddfbe5+ds-0+toradex1~deb12u1) bookworm; urg
       - add Comment field explaining the repack.
       - update copyright information.
   * debian/extra_files/:
-      - 40-hardware-id.toml: change hardware ID to debian-12.
+      - 40-hardware-id.toml: change hardware ID to debian-13.
       - 50-secondaries.toml: enable secondaries.
       - 60-polling-interval.toml: set the same interval as torizon.
       - 70-disable-ostree.toml: rename from 80-*.
@@ -36,7 +36,7 @@ aktualizr-torizon (1.0+git20240529.d4ddfbe5+ds-0+toradex1~deb12u1) bookworm; urg
       - secondaries.json: remove bootloader secondary.
   * debian/gbp.conf:
       - add default parameters to git-buildpackage.
-      - change packaging branch to toradex/bookworm.
+      - change packaging branch to toradex/unstable.
   * debian/rules:
       - disable tests during build.
       - enable offline updates.
@@ -60,7 +60,7 @@ aktualizr-torizon (1.0+git20240529.d4ddfbe5+ds-0+toradex1~deb12u1) bookworm; urg
   * workflows: add release action
   * workflows: fix release job
 
- -- Carlos Henrique Lima Melara <carlos.melara@toradex.com>  Fri, 21 Jun 2024 11:05:52 -0300
+ -- Carlos Henrique Lima Melara <carlos.melara@toradex.com>  Thu, 04 Jul 2024 14:34:55 -0300
 
 aktualizr-torizon (1.0+git20240124.72b0ec5+ds-1) focal; urgency=medium
 
